@@ -1,0 +1,10 @@
+#+title: 电脑配置
+#+author: Dylan Yang
+
+* oh my zsh
+
+将 ~.zshrc~ 配置文件进行备份，包括一些自定义的快捷键。
+
+* emacs
+
+Emacs 的配置文件夹做为子项目保存，配置文件更新之后需要同步更新。
