@@ -101,8 +101,8 @@ source $ZSH/oh-my-zsh.sh
 alias ll="ls -al"
 alias vi="vim"
 alias npm="npm --registry=https://registry.npm.taobao.org"
-#alias emacs-debug="open -a /Applications/Emacs.app --args --debug-init"
-#alias emacs="open -a /Applications/Emacs.app"
+alias emacs-debug="open -a /Applications/Emacs.app --args --debug-init"
+alias emacs="open -a /Applications/Emacs.app"
 alias pip="pip3"
 alias python="python3"
 export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles
@@ -111,3 +111,4 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 PATH=$PATH:$HOME/.pkg_uninstaller
+export PATH="/usr/local/sbin:$PATH"
