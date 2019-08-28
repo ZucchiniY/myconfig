@@ -1,6 +1,11 @@
 #+title: 电脑配置
 #+author: Dylan Yang
 
+* homebrew
+
+在 Mac 上使用工具进行开发，需要 brew 工具进行配合，现在将一些必要的工
+具记录下来，保存到 brew_list.txt 文件中。
+
 * oh my zsh
 
 将 ~.zshrc~ 配置文件进行备份，包括一些自定义的快捷键。
