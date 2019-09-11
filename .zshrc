@@ -103,8 +103,6 @@ alias vi="vim"
 alias npm="npm --registry=https://registry.npm.taobao.org"
 alias emacs-debug="open -a /Applications/Emacs.app --args --debug-init"
 alias emacs="open -a /Applications/Emacs.app"
-alias pip="pip3"
-alias python="python3"
 export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles
 
 export NVM_DIR="$HOME/.nvm"

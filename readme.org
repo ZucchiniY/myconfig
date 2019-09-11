@@ -13,3 +13,7 @@
 * emacs
 
 Emacs 的配置文件夹做为子项目保存，配置文件更新之后需要同步更新。
+
+* python
+
+update-python-packages.py 脚本用来更新 python 的安装包。
