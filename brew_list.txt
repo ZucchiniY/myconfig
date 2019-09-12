@@ -17,3 +17,4 @@ wget
 youtube-dl
 axel
 glances
+axel
