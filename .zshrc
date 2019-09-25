@@ -103,10 +103,17 @@ alias vi="vim"
 alias npm="npm --registry=https://registry.npm.taobao.org"
 alias emacs-debug="open -a /Applications/Emacs.app --args --debug-init"
 alias emacs="open -a /Applications/Emacs.app"
+# homebrew path
 export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles
-
+# nvm path
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+# pkg_uninstaller path
 PATH=$PATH:$HOME/.pkg_uninstaller
 export PATH="/usr/local/sbin:$PATH"
+# virtualenvwrapper path
+export WORKON_HOME=$HOME/.virtualenvs # virtualenv 统一管理目录
+export PROJECT_HOME=$HOME/workspace/code/python
+source /usr/local/bin/virtualenvwrapper.sh
+export VIRTUALENVWRAPPER_VIRTUALENV_ARGS='--no-site-packages' # 默认生成干净隔绝的环境
