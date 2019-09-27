@@ -112,9 +112,3 @@ export NVM_DIR="$HOME/.nvm"
 # pkg_uninstaller path
 PATH=$PATH:$HOME/.pkg_uninstaller
 export PATH="/usr/local/sbin:$PATH"
-# virtualenvwrapper path
-export WORKON_HOME=$HOME/.virtualenvs # virtualenv 统一管理目录
-export PROJECT_HOME=$HOME/workspace/code/python
-export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
-source /usr/local/bin/virtualenvwrapper.sh
-export VIRTUALENVWRAPPER_VIRTUALENV_ARGS='--no-site-packages' # 默认生成干净隔绝的环境
