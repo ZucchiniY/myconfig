@@ -112,3 +112,4 @@ export NVM_DIR="$HOME/.nvm"
 # pkg_uninstaller path
 PATH=$PATH:$HOME/.pkg_uninstaller
 export PATH="/usr/local/sbin:$PATH"
+eval $(thefuck --alias)
