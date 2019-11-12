@@ -5,6 +5,6 @@ from subprocess import call
 
 for dist in pkg_resources.working_set:
     package_name = dist.project_name
-    call('pip install --upgrade {}'.format(package_name), shell=True)
+    call('pip3 install --upgrade {}'.format(package_name), shell=True)
 
 print('update all success!')
