@@ -1,19 +1,32 @@
 #+title: 电脑配置
 #+author: Dylan Yang
+#+date: 2019:11:12
 
-* homebrew
+* 配置选择
+
+** homebrew
 
 在 Mac 上使用工具进行开发，需要 brew 工具进行配合，现在将一些必要的工
 具记录下来，保存到 brew_list.txt 文件中。
 
-* oh my zsh
+** oh my zsh
 
 将 ~.zshrc~ 配置文件进行备份，包括一些自定义的快捷键。
 
-* emacs
+** emacs
 
 Emacs 的配置文件夹做为子项目保存，配置文件更新之后需要同步更新。
 
-* python
+** python
 
 update-python-packages.py 脚本用来更新 python 的安装包。
+
+** tmux
+
+使用 iTerm2 的时候，经常和 tmux 工具一起使用，我使用的主要是分屏功能，
+配置起来又比较麻烦，就和 oh my zsh 一样，使用同样的默认配置来配合使用。
+
+* 配置方案
+
+在 clone 这个库之后，建议执行 =deploy.sh= 来完成配置，或者手工与目录进
+行关联。
