@@ -66,6 +66,7 @@ plugins=(
   npm nvm node 
   golang
   python pyenv pylint django pip pep8
+  zsh-wakatime
 )
 
 source $ZSH/oh-my-zsh.sh
