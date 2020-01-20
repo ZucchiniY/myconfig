@@ -26,6 +26,10 @@ update-python-packages.py 脚本用来更新 python 的安装包。
 使用 iTerm2 的时候，经常和 tmux 工具一起使用，我使用的主要是分屏功能，
 配置起来又比较麻烦，就和 oh my zsh 一样，使用同样的默认配置来配合使用。
 
+** nvm
+
+下面 nvm 项目，然后建立软链接，后续使用 nvm 管理 nodejs。
+
 * 配置方案
 
 在 clone 这个库之后，建议执行 =deploy.sh= 来完成配置，或者手工与目录进

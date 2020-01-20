@@ -110,31 +110,9 @@ export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.tuna.tsinghua.edu.cn/homebrew-bott
 # nvm path
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" 
 # pkg_uninstaller path
 PATH=$PATH:$HOME/.pkg_uninstaller
 export PATH="/usr/local/sbin:$PATH"
 eval $(thefuck --alias)
 alias lg="git log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(red)%h%C(r) —— %C(bold blue)%an%C(r): %C(white)%s%C(r) %C(dim white) %C(bold green)(%ar)%C(r) %C(bold yellow)%d%C(r)' --all"
-#	
-#	
-#	
-#	
-#	
-#	
-#	
-#	
-#	
-#	
-#	
-#	
-#	
-#	
-#	
-#	
-#	
-#	
-#	
-#	
-#	
-#	
