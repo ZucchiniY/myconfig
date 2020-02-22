@@ -34,3 +34,7 @@ update-python-packages.py 脚本用来更新 python 的安装包。
 
 在 clone 这个库之后，建议执行 =deploy.sh= 来完成配置，或者手工与目录进
 行关联。
+
+* 升级方案
+
+在当前目录下，通过执行 =bash updates.sh= 脚本升级所需配置。
