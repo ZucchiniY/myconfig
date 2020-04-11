@@ -66,7 +66,6 @@ plugins=(
   npm nvm node 
   golang
   python pyenv pylint django pip pep8
-  wakatime
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -115,5 +114,4 @@ export NVM_NODEJS_ORG_MIRROR=https://npm.taobao.org/mirrors/node
 # pkg_uninstaller path
 PATH=$PATH:$HOME/.pkg_uninstaller
 export PATH="/usr/local/sbin:$PATH"
-eval $(thefuck --alias)
 alias lg="git log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(red)%h%C(r) —— %C(bold blue)%an%C(r): %C(white)%s%C(r) %C(dim white) %C(bold green)(%ar)%C(r) %C(bold yellow)%d%C(r)' --all"
