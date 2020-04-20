@@ -18,4 +18,3 @@ youtube-dl
 axel
 glances
 axel
-thefuck
