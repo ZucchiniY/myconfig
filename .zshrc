@@ -105,6 +105,7 @@ alias emacs-debug="open -a /Applications/Emacs.app --args --debug-init"
 alias emacs="open -a /Applications/Emacs.app"
 # homebrew path
 export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles
+#	
 # nvm path
 # export NVM_DIR="$HOME/.nvm"
 # [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
@@ -117,3 +118,4 @@ export NVM_NODEJS_ORG_MIRROR=https://npm.taobao.org/mirrors/node
 PATH=$PATH:$HOME/.pkg_uninstaller
 export PATH="/usr/local/sbin:$PATH"
 alias lg="git log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(red)%h%C(r) —— %C(bold blue)%an%C(r): %C(white)%s%C(r) %C(dim white) %C(bold green)(%ar)%C(r) %C(bold yellow)%d%C(r)' --all"
+export PATH="/usr/local/opt/curl/bin:$PATH"
