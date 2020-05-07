@@ -64,7 +64,6 @@ plugins=(
   emacs iterm2 tmux
   themes emoji emoji-clock 
   npm nvm node 
-  golang
   python pyenv pylint django pip pep8
 )
 
