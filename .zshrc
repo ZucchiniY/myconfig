@@ -113,3 +113,4 @@ export NVM_NODEJS_ORG_MIRROR=https://npm.taobao.org/mirrors/node
 PATH=$PATH:$HOME/.pkg_uninstaller
 export PATH="/usr/local/sbin:$PATH"
 export PATH="/usr/local/opt/curl/bin:$PATH"
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
