@@ -30,6 +30,10 @@ update-python-packages.py 脚本用来更新 python 的安装包。
 
 下面 nvm 项目，然后建立软链接，后续使用 nvm 管理 nodejs。
 
+** .zprofile
+
+增加 .zprofile 文件，用来解决 path_helper 重排环境变量的问题。
+
 * 配置方案
 
 在 clone 这个库之后，建议执行 =deploy.sh= 来完成配置，或者手工与目录进
