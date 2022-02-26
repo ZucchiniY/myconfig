@@ -1,4 +1,4 @@
-#!/usr/bin/env python3.7
+#!/usr/bin/env python3.8.12
 
 import pkg_resources
 from subprocess import call
