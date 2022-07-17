@@ -122,3 +122,4 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 
 NVM_NODEJS_ORG_MIRROR=http://mirrors.cloud.tencent.com/npm
+export PATH="/usr/local/sbin:$PATH"
