@@ -10,6 +10,6 @@
 	branch = master
 [submodule ".emacs.d"]
 	path = .emacs.d
-	url = https://ghproxy.com/https://github.com/ZucchiniY/.emacs.d.git
+	url = https://github.com/ZucchiniY/.emacs.d.git
 	depth = 1
-	branch = goto-today
+	branch = main
