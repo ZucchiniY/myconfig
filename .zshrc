@@ -100,7 +100,6 @@ source $ZSH/oh-my-zsh.sh
 alias ll="ls -al"
 alias vi="vim"
 alias npm="npm --registry=https://repo.huaweicloud.com/repository/npm/"
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
