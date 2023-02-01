@@ -7,15 +7,21 @@
 # { 更新的的文件，修复的问题 }
 
 # type 的内容
-# :sparkles: 新特性
+# 新特性
+# :sparkles: 
+# 编写文档
+# :memo: 
+# 新增或者修改配置文档
+# :wrench: 
+# :arrow_down: 降级 依赖
+# :arrow_up: 升级 依赖
 # :bug: 修改问题
-# :memo: 编写文档
-# :wrench: 新增或者修改配置文档
+
+# ----------------------------------
 # :art: 调整代码格式和样式
 # :recycle: 重构代码
 # :white_check_mark: 更新测试
 # :lipstick: 更新 UI 和样式文件
-
 # :tada: 初始化项目
 # :children_crossing: 改善用户体验
 # :loud_sound: 增加日志
@@ -26,8 +32,6 @@
 # :construction_woker: 新增 CI 系统
 # :heavy_plus_sign: 新增依赖
 # :heavy_minux_sign: 移除依赖
-# :arrow_down: 依赖降级
-# :arrow_up: 依赖升级
 # :bookmark: 发布版本标签
 # :ambulance: 紧急修复
 # :zap: 提升性能
