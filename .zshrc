@@ -68,7 +68,7 @@ ZSH_THEME="steeef"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git python emoji)
+plugins=(git python nvm node npm tmux)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -99,7 +99,16 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias ll="ls -al"
 alias vi="vim"
+
+# nvm npm nodejs
 alias npm="npm --registry=https://repo.huaweicloud.com/repository/npm/"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "/usr/local/opt/nvm/nvm.sh" ] && \. "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
+[ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+## NVM_NODEJS_ORG_MIRROR=https://npmmirror.com/mirrors/node/ 
+NVM_NODEJS_ORG_MIRROR=https://repo.huaweicloud.com/nodejs/
+NVM_IOJS_ORG_MIRROR=https://repo.huaweicloud.com/iojs/
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
