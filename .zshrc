@@ -101,7 +101,8 @@ alias ll="ls -al"
 alias vi="vim"
 
 # nvm npm nodejs
-alias npm="npm --registry=https://repo.huaweicloud.com/repository/npm/"
+# alias npm="npm --registry=https://repo.huaweicloud.com/repository/npm/"
+# alias npm="npm --registry=https://registry.npmmirror.com"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "/usr/local/opt/nvm/nvm.sh" ] && \. "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
@@ -109,6 +110,10 @@ export NVM_DIR="$HOME/.nvm"
 ## NVM_NODEJS_ORG_MIRROR=https://npmmirror.com/mirrors/node/ 
 NVM_NODEJS_ORG_MIRROR=https://repo.huaweicloud.com/nodejs/
 NVM_IOJS_ORG_MIRROR=https://repo.huaweicloud.com/iojs/
+
+# electron
+ELECTRON_MIRROR="https://npmmirror.com/mirrors/electron/"
+ELECTRON_CUSTOM_DIR="{{ version }}"
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
