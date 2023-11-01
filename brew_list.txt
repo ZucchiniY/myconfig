@@ -184,6 +184,7 @@ adoptopenjdk
 android-platform-tools
 emacs
 miniconda
+orbstack
 rar
 raycast
 visual-studio-code
