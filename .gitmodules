@@ -1,11 +1,11 @@
 [submodule "ohmyzsh"]
 	path = ohmyzsh
-	url = https://ghproxy.com/https://github.com/ohmyzsh/ohmyzsh.git
+	url = https://github.com/ohmyzsh/ohmyzsh.git
 	depth = 1
 	branch = master
 [submodule ".tmux"]
 	path = .tmux
-	url = https://ghproxy.com/https://github.com/gpakosz/.tmux.git
+	url = https://github.com/gpakosz/.tmux.git
 	depth = 1
 	branch = master
 [submodule ".emacs.d"]
