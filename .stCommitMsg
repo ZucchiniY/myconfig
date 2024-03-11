@@ -13,13 +13,17 @@
 # :memo: 
 # 新增或者修改配置文档
 # :wrench: 
-# :arrow_down: 降级 依赖
-# :arrow_up: 升级 依赖
-# :bug: 修改问题
+# 重构代码
+# :recycle: 
+# 修改问题
+# :bug: 
+# 后续目标
+# :bulb:
 
 # ----------------------------------
+# :arrow_down: 降级 依赖
+# :arrow_up: 升级 依赖
 # :art: 调整代码格式和样式
-# :recycle: 重构代码
 # :white_check_mark: 更新测试
 # :lipstick: 更新 UI 和样式文件
 # :tada: 初始化项目
