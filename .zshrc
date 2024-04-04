@@ -117,14 +117,14 @@ ELECTRON_CUSTOM_DIR="{{ version }}"
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/usr/local/Caskroom/miniconda/base/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+__conda_setup="$('/home/dylan/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
 if [ $? -eq 0 ]; then
     eval "$__conda_setup"
 else
-    if [ -f "/usr/local/Caskroom/miniconda/base/etc/profile.d/conda.sh" ]; then
-        . "/usr/local/Caskroom/miniconda/base/etc/profile.d/conda.sh"
+    if [ -f "/home/dylan/miniconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/dylan/miniconda3/etc/profile.d/conda.sh"
     else
-        export PATH="/usr/local/Caskroom/miniconda/base/bin:$PATH"
+        export PATH="/home/dylan/miniconda3/bin:$PATH"
     fi
 fi
 unset __conda_setup
@@ -141,3 +141,7 @@ export HOMEBREW_BREW_GIT_REMOTE="https://mirrors.tuna.tsinghua.edu.cn/git/homebr
 export HOMEBREW_CORE_GIT_REMOTE="https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/homebrew-core.git"
 export HOMEBREW_PIP_INDEX_URL="https://pypi.tuna.tsinghua.edu.cn/simple"
 export PATH="/usr/local/opt/curl/bin:$PATH"
+
+export http_proxy=http://localhost:20171
+export https_proxy=http://localhost:20171
+export all_proxy=socks5://localhost:20170
