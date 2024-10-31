@@ -147,3 +147,7 @@ export HOMEBREW_PIP_INDEX_URL="https://pypi.tuna.tsinghua.edu.cn/simple"
 export GOPATH=/Users/dylan/go
 export PATH="$PATH:/usr/local/opt/curl/bin:$GOPATH/bin"
 
+export PATH="/usr/local/opt/openjdk/bin:$PATH"
+export CPPFLAGS="-I/usr/local/opt/openjdk/include"
+export CODES_HOME=/Users/dylan/workspace/icodes/codes_config/codes_config
+export CODES_VERSION=2.1.0RC
