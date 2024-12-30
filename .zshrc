@@ -149,5 +149,4 @@ export PATH="$PATH:/usr/local/opt/curl/bin:$GOPATH/bin"
 
 export PATH="/usr/local/opt/openjdk/bin:$PATH"
 export CPPFLAGS="-I/usr/local/opt/openjdk/include"
-export CODES_HOME=/Users/dylan/workspace/icodes/codes_config/codes_config
-export CODES_VERSION=2.1.0RC
+export HOMEBREW_NO_INSTALL_FROM_API=1
