@@ -117,19 +117,19 @@ ELECTRON_CUSTOM_DIR="{{ version }}"
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/usr/local/Caskroom/miniconda/base/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/usr/local/Caskroom/miniconda/base/etc/profile.d/conda.sh" ]; then
-        . "/usr/local/Caskroom/miniconda/base/etc/profile.d/conda.sh"
-    else
-        export PATH="/usr/local/Caskroom/miniconda/base/bin:$PATH"
-    fi
-fi
-unset __conda_setup
+#__conda_setup="$('/usr/local/Caskroom/miniconda/base/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+#if [ $? -eq 0 ]; then
+#    eval "$__conda_setup"
+#else
+#    if [ -f "/usr/local/Caskroom/miniconda/base/etc/profile.d/conda.sh" ]; then
+#        . "/usr/local/Caskroom/miniconda/base/etc/profile.d/conda.sh"
+#    else
+#        export PATH="/usr/local/Caskroom/miniconda/base/bin:$PATH"
+#    fi
+#fi
+#unset __conda_setup
 # <<< conda initialize <<<
-conda init "$(basename "${SHELL}")"
+#conda init "$(basename "${SHELL}")"
 
 export PATH="/usr/local/opt/sqlite/bin:$PATH"
 export LDFLAGS="-L/usr/local/opt/sqlite/lib"
@@ -150,3 +150,11 @@ export PATH="$PATH:/usr/local/opt/curl/bin:$GOPATH/bin"
 export PATH="/usr/local/opt/openjdk/bin:$PATH"
 export CPPFLAGS="-I/usr/local/opt/openjdk/include"
 export HOMEBREW_NO_INSTALL_FROM_API=1
+
+# pnpm
+export PNPM_HOME="/Users/dylan/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
