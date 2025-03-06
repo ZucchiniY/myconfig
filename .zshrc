@@ -104,9 +104,9 @@ alias vi="vim"
 # alias npm="npm --registry=https://repo.huaweicloud.com/repository/npm/"
 # alias npm="npm --registry=https://registry.npmmirror.com"
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "/usr/local/opt/nvm/nvm.sh" ] && \. "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
-[ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+## export NVM_DIR="$HOME/.nvm"
+## [ -s "/usr/local/opt/nvm/nvm.sh" ] && \. "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
+## [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 ## NVM_NODEJS_ORG_MIRROR=https://npmmirror.com/mirrors/node/ 
 NVM_NODEJS_ORG_MIRROR=https://repo.huaweicloud.com/nodejs/
 NVM_IOJS_ORG_MIRROR=https://repo.huaweicloud.com/iojs/
@@ -151,6 +151,10 @@ export PATH="/usr/local/opt/openjdk/bin:$PATH"
 export CPPFLAGS="-I/usr/local/opt/openjdk/include"
 export HOMEBREW_NO_INSTALL_FROM_API=1
 
+# volta
+export VOLTA_HOME="$HOME/.volta"
+export PATH="$VOLTA_HOME/bin:$PATH"
+
 # pnpm
 export PNPM_HOME="/Users/dylan/Library/pnpm"
 case ":$PATH:" in
@@ -158,3 +162,4 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
+
