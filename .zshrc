@@ -162,4 +162,11 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
+# rust
+export RUST_HOME="$HOME/.cargo/bin"
+export PATH="$RUST_HOME:$PATH"
+export RUSTUP_DIST_SERVER=https://mirrors.ustc.edu.cn/rust-static
+export RUSTUP_UPDATE_ROOT=https://mirrors.ustc.edu.cn/rust-static/rustup
 
+#
+#
