@@ -171,3 +171,6 @@ export RUSTUP_UPDATE_ROOT=https://mirrors.ustc.edu.cn/rust-static/rustup
 #
 #
 export PATH="/usr/local/opt/curl/bin:$PATH"
+
+# Created by `pipx` on 2025-04-22 06:43:02
+export PATH="$PATH:/Users/dylan/.local/bin"
