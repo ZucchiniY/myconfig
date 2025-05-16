@@ -68,7 +68,7 @@ ZSH_THEME="steeef"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git python nvm node npm tmux)
+plugins=(git python nvm node npm tmux rust)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -168,9 +168,10 @@ export PATH="$RUST_HOME:$PATH"
 export RUSTUP_DIST_SERVER=https://mirrors.ustc.edu.cn/rust-static
 export RUSTUP_UPDATE_ROOT=https://mirrors.ustc.edu.cn/rust-static/rustup
 
-#
-#
 export PATH="/usr/local/opt/curl/bin:$PATH"
 
 # Created by `pipx` on 2025-04-22 06:43:02
 export PATH="$PATH:/Users/dylan/.local/bin"
+
+export RUSTUP_DIST_SERVER=https://mirrors.ustc.edu.cn/rust-static
+export RUSTUP_UPDATE_ROOT=https://mirrors.ustc.edu.cn/rust-static/rustup
