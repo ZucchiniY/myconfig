@@ -176,3 +176,5 @@ export PATH="$PATH:/Users/dylan/.local/bin"
 export RUSTUP_DIST_SERVER=https://mirrors.ustc.edu.cn/rust-static
 export RUSTUP_UPDATE_ROOT=https://mirrors.ustc.edu.cn/rust-static/rustup
 export UV_INDEX_URL=https://mirrors.ustc.edu.cn/pypi/simple
+export VOLTA_HOME="$HOME/.volta"
+export PATH="$VOLTA_HOME/bin:$PATH"
