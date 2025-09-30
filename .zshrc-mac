@@ -108,28 +108,8 @@ alias vi="vim"
 ## [ -s "/usr/local/opt/nvm/nvm.sh" ] && \. "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
 ## [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 ## NVM_NODEJS_ORG_MIRROR=https://npmmirror.com/mirrors/node/ 
-NVM_NODEJS_ORG_MIRROR=https://repo.huaweicloud.com/nodejs/
-NVM_IOJS_ORG_MIRROR=https://repo.huaweicloud.com/iojs/
-
-# electron
-ELECTRON_MIRROR="https://npmmirror.com/mirrors/electron/"
-ELECTRON_CUSTOM_DIR="{{ version }}"
-
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-#__conda_setup="$('/usr/local/Caskroom/miniconda/base/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-#if [ $? -eq 0 ]; then
-#    eval "$__conda_setup"
-#else
-#    if [ -f "/usr/local/Caskroom/miniconda/base/etc/profile.d/conda.sh" ]; then
-#        . "/usr/local/Caskroom/miniconda/base/etc/profile.d/conda.sh"
-#    else
-#        export PATH="/usr/local/Caskroom/miniconda/base/bin:$PATH"
-#    fi
-#fi
-#unset __conda_setup
-# <<< conda initialize <<<
-#conda init "$(basename "${SHELL}")"
+## NVM_NODEJS_ORG_MIRROR=https://repo.huaweicloud.com/nodejs/
+## NVM_IOJS_ORG_MIRROR=https://repo.huaweicloud.com/iojs/
 
 export PATH="/usr/local/opt/sqlite/bin:$PATH"
 export LDFLAGS="-L/usr/local/opt/sqlite/lib"
@@ -141,7 +121,6 @@ export HOMEBREW_API_DOMAIN="https://mirrors.ustc.edu.cn/homebrew-bottles/api"
 export HOMEBREW_BOTTLE_DOMAIN="https://mirrors.ustc.edu.cn/homebrew-bottles"
 export HOMEBREW_BREW_GIT_REMOTE="https://mirrors.ustc.edu.cn/brew.git"
 export HOMEBREW_CORE_GIT_REMOTE="https://mirrors.ustc.edu.cn/homebrew-core.git"
-
 export HOMEBREW_PIP_INDEX_URL="https://mirrors.ustc.edu.cn/pypi/simple"
 
 # golang
@@ -177,6 +156,7 @@ export PATH="$PATH:/Users/dylan/.local/bin"
 export RUSTUP_DIST_SERVER=https://mirrors.ustc.edu.cn/rust-static
 export RUSTUP_UPDATE_ROOT=https://mirrors.ustc.edu.cn/rust-static/rustup
 export UV_INDEX_URL=https://mirrors.ustc.edu.cn/pypi/simple
+export UV_PYTHON_INSTALL_MIRROR="https://ghfast.top/https://github.com/astral-sh/python-build-standalone/releases/download"
 export VOLTA_HOME="$HOME/.volta"
 export PATH="$VOLTA_HOME/bin:$PATH"
 export PYTHON_BUILD_MIRROR_URL=https://registry.npmmirror.com/-/binary/python
