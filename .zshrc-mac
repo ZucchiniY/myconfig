@@ -122,6 +122,8 @@ export HOMEBREW_BOTTLE_DOMAIN="https://mirrors.ustc.edu.cn/homebrew-bottles"
 export HOMEBREW_BREW_GIT_REMOTE="https://mirrors.ustc.edu.cn/brew.git"
 export HOMEBREW_CORE_GIT_REMOTE="https://mirrors.ustc.edu.cn/homebrew-core.git"
 export HOMEBREW_PIP_INDEX_URL="https://mirrors.ustc.edu.cn/pypi/simple"
+export HOMEBREW_NO_AUTO_UPDATE=true
+export HOMEBREW_NO_INSTALL_FROM_API=1
 
 # golang
 export GOPATH=/Users/dylan/go
