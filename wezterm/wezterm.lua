@@ -12,11 +12,12 @@ config.initial_cols = 120
 config.initial_rows = 28
 
 -- or, changing the font size and color scheme.
-config.font_size = 14
+config.font_size = 16
 -- AdventureTime | Batman | Catppuccin | Dracula | GitHub Dark
-config.color_scheme = ''
+config.color_scheme = 'Tokyo Night'
 config.font = wezterm.font_with_fallback({
       'Iosevka Nerd Font Mono',
+      'LXGW WenKai Mono Medium',
       'JetBrains Mono',
       'Fire Code',
       '华文仿宋',
@@ -36,6 +37,7 @@ end)
 -- window background Opacity
 config.window_background_opacity = 0.75
 config.text_background_opacity = 0.7
+config.macos_window_background_blur = 30
 
 -- GPU
 config.front_end="WebGpu"
