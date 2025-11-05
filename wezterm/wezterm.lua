@@ -24,20 +24,45 @@ config.font = wezterm.font_with_fallback({
       'Microsoft YaHei'
 })
 
--- key binds
+-- 多路复用
+config.enable_wayland = true
 
-wezterm.on('update-right-status', function(window, pane)
-  local name = window:active_key_table()
-  if name then
-    name = 'TABLE: ' .. name
-  end
-  window:set_right_status(name or '')
+-- auto save
+config.automatically_reload_config = true
+
+-- tabs config
+config.tab_bar_at_bottom = true
+config.use_fancy_tab_bar = false
+config.show_tab_index_in_tab_bar = true
+config.status_update_interval = 1000
+
+wezterm.on('update-status', function(window, pane)
+              local date = wezterm.strftime('%Y-%m-%d %H:%M:%S')
+              window:set_right_status(wezterm.format({
+                                            { Foregroud = {Color = '#ffffff'}},
+                                            { Backgroud = { Color = '#333333'}},
+                                            { Text = ' ' .. date ..' '},
+              }))
 end)
 
 -- window background Opacity
-config.window_background_opacity = 0.75
-config.text_background_opacity = 0.7
+config.window_background_opacity = 0.75 -- 透明度 0.0 ~ 1.0
+config.text_background_opacity = 0.7 -- 文字透明度
 config.macos_window_background_blur = 30
+
+-- 背景图
+-- config.window_background_image = "/Users/dylan/workspace/myconfig/wezterm/cat.png"
+-- config.window_background_image_hsb = {
+--    brightness = 0.3, -- 调整亮度 0.0 ~ 1.0
+--    hue = 1.0, -- 调整色调 默认值 1.0
+--    saturation = 1.0, -- 调整饱和度 默认值 1.0
+-- }
+
+-- 渐变背景
+config.window_background_gradient = {
+   colors = {"#082b41", "#171d1d"}, -- 渐变颜色
+   orientation = "Vertical", -- 渐变方向 (Vertical/Horizontal)
+}
 
 -- GPU
 config.front_end="WebGpu"
