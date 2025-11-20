@@ -13,3 +13,12 @@
 	url = https://github.com/ZucchiniY/.emacs.d.git
 	depth = 1
 	branch = main
+[submodule "zsh/zsh-autosuggestions"]
+	path = zsh/zsh-autosuggestions
+	url = https://ghfast.top/https://github.com/zsh-users/zsh-autosuggestions
+[submodule "zsh/zsh-syntax-highlighting"]
+	path = zsh/zsh-syntax-highlighting
+	url = https://ghfast.top/https://github.com/zsh-users/zsh-syntax-highlighting.git
+[submodule "zsh/zsh-completions"]
+	path = zsh/zsh-completions
+	url = https://ghfast.top/https://github.com/zsh-users/zsh-completions.git

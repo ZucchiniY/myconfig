@@ -1,5 +1,5 @@
-ln -s ./.emacs.d ~/
-ln -s ./.zshrc-mac ~/.zshrc
-ln -s ./.oh-my-zsh ~/
-ln -s -f .tmux/.tmux.conf ~/
-ln -s ./.tmux/.tmux.conf.local ~/
+ln -s $(pwd)/.emacs.d ~/
+ln -s $(pwd)/.zshrc-mac ~/.zshrc
+ln -s $(pwd)/.oh-my-zsh ~/
+ln -s -f $(pwd)/.tmux/.tmux.conf ~/
+ln -s $(pwd)/.tmux/.tmux.conf.local ~/

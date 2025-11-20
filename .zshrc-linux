@@ -132,7 +132,13 @@ case ":$PATH:" in
 esac
 export PYTHON_BUILD_MIRROR_URL=https://registry.npmmirror.com/-/binary/python
 # pnpm end
+
 # uv python install
 # export UV_PYTHON_INSTALL_MIRROR="https://github.com/astral-sh/python-build-standalone/releases/download"
 # export UV_PYTHON_INSTALL_MIRROR="https://mirror.nju.edu.cn/github-release/indygreg/python-build-standalone/"
 export UV_PYTHON_INSTALL_MIRROR="https://ghfast.top/https://github.com/astral-sh/python-build-standalone/releases/download"
+export ANDROID_NDK_HOME="/home/dylan/workspace/tools/android-ndk-r29"
+
+# volta
+export VOLTA_HOME="$HOME/.volta/"
+export PATH="$VOLTA_HOME/bin:$PATH"
