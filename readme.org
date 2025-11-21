@@ -1,17 +1,12 @@
 #+title: 电脑配置
 #+author: Dylan Yang
-#+date: 2019:11:12
+#+date: 2025:11:21
 
 * 配置选择
 
-** homebrew
+** macports
 
-在 Mac 上使用工具进行开发，需要 brew 工具进行配合，现在将一些必要的工
-具记录下来，保存到 brew_list.txt 文件中。
-
-** oh my zsh
-
-将 ~.zshrc~ 配置文件进行备份，包括一些自定义的快捷键。
+使用 macports 替代原来的 homebrew ，用编译解决自动安装的问题，还可以放弃 ruby 相关的依赖，轻松。
 
 ** emacs
 
@@ -19,26 +14,14 @@ Emacs 的配置文件夹做为子项目保存，配置文件更新之后需要�
 
 ** python
 
-update-python-packages.py 脚本用来更新 python 的安装包。
+使用 =uv= 工具管理 =Python= 相关的包和开发环境。
 
-** tmux
+** flutter
 
-使用 iTerm2 的时候，经常和 tmux 工具一起使用，我使用的主要是分屏功能，
-配置起来又比较麻烦，就和 oh my zsh 一样，使用同样的默认配置来配合使用。
+安装 =fvm= 工具，用来管理 =flutter= 的包管理器
 
-** nvm
+~fvm install stable~ 
 
-下面 nvm 项目，然后建立软链接，后续使用 nvm 管理 nodejs。
+** nodejs
 
-** .zprofile
-
-增加 .zprofile 文件，用来解决 path_helper 重排环境变量的问题。
-
-* 配置方案
-
-在 clone 这个库之后，建议执行 =deploy.sh= 来完成配置，或者手工与目录进
-行关联。
-
-* 升级方案
-
-在当前目录下，通过执行 =bash updates.sh= 脚本升级所需配置。
+安装 =votla= 工具，用来管理 =nodejs= 的相关工具，同时使用 =pnpm= 来替代 =npm= 。
