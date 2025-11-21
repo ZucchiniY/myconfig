@@ -1,3 +1,5 @@
+# Macport
+export PATH=/opt/local/bin:$PATH
 # Starship 提示符
 eval "$(starship init zsh)"
 
@@ -70,42 +72,26 @@ export UV_INDEX_URL="https://mirrors.ustc.edu.cn/pypi/simple"
 export UV_PYTHON_INSTALL_MIRROR="https://ghfast.top/https://github.com/astral-sh/python-build-standalone/releases/download"
 export PYTHON_BUILD_MIRROR_URL="https://registry.npmmirror.com/-/binary/python"
 
-# android ndk home
-export ANDROID_NDK_HOME="/home/dylan/workspace/tools/android-ndk-r29"
-
-# volta
-export VOLTA_HOME="$HOME/.volta/"
-export PATH="$VOLTA_HOME/bin:$PATH"
-
-### Added by Zinit's installer
-if [[ ! -f $HOME/.local/share/zinit/zinit.git/zinit.zsh ]]; then
-    print -P "%F{33} %F{220}Installing %F{33}ZDHARMA-CONTINUUM%F{220} Initiative Plugin Manager (%F{33}zdharma-continuum/zinit%F{220})…%f"
-    command mkdir -p "$HOME/.local/share/zinit" && command chmod g-rwX "$HOME/.local/share/zinit"
-    command git clone https://github.com/zdharma-continuum/zinit "$HOME/.local/share/zinit/zinit.git" && \
-        print -P "%F{33} %F{34}Installation successful.%f%b" || \
-        print -P "%F{160} The clone has failed.%f%b"
-fi
-
-source "$HOME/.local/share/zinit/zinit.git/zinit.zsh"
-autoload -Uz _zinit
-(( ${+_comps} )) && _comps[zinit]=_zinit
-
-# Load a few important annexes, without Turbo
-# (this is currently required for annexes)
-zinit light-mode for \
-    zdharma-continuum/zinit-annex-as-monitor \
-    zdharma-continuum/zinit-annex-bin-gem-node \
-    zdharma-continuum/zinit-annex-patch-dl \
-    zdharma-continuum/zinit-annex-rust
-
-### End of Zinit's installer chunk
-
-## [Completion]
-## Completion scripts setup. Remove the following line to uninstall
-[[ -f /Users/dylan/.dart-cli-completion/zsh-config.zsh ]] && . /Users/dylan/.dart-cli-completion/zsh-config.zsh || true
-## [/Completion]
+# volta `sudo port install volta-node`
+export VOLTA_FEATURE_PNPM=1
+export VOLTA_HOME="$HOME/.volta"
+export PATH="$VOLTA_HOME/bin":"$PATH"
 
 # fvm dart and flutter 管理器
 export PUB_HOSTED_URL="https://mirrors.tuna.tsinghua.edu.cn/dart-pub"
 export FLUTTER_STORAGE_BASE_URL="https://mirrors.tuna.tsinghua.edu.cn/flutter"
-export PATH=$PATH:~/fvm/default/bin
+export PATH=$PATH:"$HOME/fvm/default/bin"
+
+# jdk
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-25-macports.jdk/Contents/Home
+
+# android
+export ANDROID_HOME=$HOME/.android
+# android sdk
+export ANDROID_SDK_ROOT="$HOME/Library/Android/sdk"
+
+# android ndk home
+export ANDROID_NDK_ROOT="$ANDROID_SDK_ROOT/ndk/29.0.14206865"
+
+export PATH="$ANDROID_SDK_ROOT/cmdline-tools/latest/bin":"$ANDROID_SDK_ROOT/platform-tools":"$PATH"
+export PATH="$ANDROID_NDK_ROOT":"$PATH"
