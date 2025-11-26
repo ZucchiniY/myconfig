@@ -1,0 +1,16 @@
+# fvm dart and flutter 管理器
+export PUB_HOSTED_URL="https://mirrors.tuna.tsinghua.edu.cn/dart-pub"
+export FLUTTER_STORAGE_BASE_URL="https://mirrors.tuna.tsinghua.edu.cn/flutter"
+export PATH=$PATH:"$HOME/fvm/default/bin"
+
+# jdk
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-25-macports.jdk/Contents/Home
+
+# android
+# android sdk
+export ANDROID_HOME="$HOME/Library/Android/sdk"
+# android ndk home
+export ANDROID_NDK_ROOT="$ANDROID_SDK_ROOT/ndk/29.0.14206865"
+# path
+export PATH="$PATH":"$ANDROID_HOME/cmdline-tools/latest/bin"
+export PATH="$PATH:$ANDROID_HOME/emulator:$ANDROID_HOME/platform-tools"
