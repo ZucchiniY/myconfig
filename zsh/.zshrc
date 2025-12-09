@@ -1,12 +1,14 @@
 if [[ "$OSTYPE" =~ ^darwin ]]; then
     # Macport
     export PATH=/opt/local/bin:$PATH
+    export PATH=/opt/local/lib:$PATH
     ./macrc.sh
 fi
 
 if [[ "$OSTYPE" =~ ^linux ]]; then
     eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 fi
+
 # Starship 提示符
 eval "$(starship init zsh)"
 
@@ -83,3 +85,23 @@ export PYTHON_BUILD_MIRROR_URL="https://registry.npmmirror.com/-/binary/python"
 export VOLTA_FEATURE_PNPM=1
 export VOLTA_HOME="$HOME/.volta"
 export PATH="$VOLTA_HOME/bin":"$PATH"
+
+# fvm dart and flutter 管理器
+export PUB_HOSTED_URL="https://mirrors.tuna.tsinghua.edu.cn/dart-pub"
+export FLUTTER_STORAGE_BASE_URL="https://mirrors.tuna.tsinghua.edu.cn/flutter"
+export PATH=$PATH:"$HOME/fvm/default/bin"
+
+# android
+# android sdk
+export ANDROID_HOME="$HOME/Library/Android/sdk"
+
+# android ndk home
+export NDK_HOME="$ANDROID_SDK_ROOT/ndk/29.0.14206865"
+
+export PATH="$ANDROID_HOME/cmdline-tools/latest/bin":"$ANDROID_HOME/platform-tools":"$PATH"
+export PATH="$NDK_HOMDE/bin":"$NDK_HOME/toolchains/llvm/prebuilt/darwin-x86_64/bin":"$PATH"
+
+# gradle home
+export GRADLE_USER_HOME="$HOME/.gradle"
+
+eval "$(zoxide init zsh)"

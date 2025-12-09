@@ -36,4 +36,30 @@ Emacs 的配置文件夹做为子项目保存，配置文件更新之后需要�
 
 * 配置
 
-- zsh :: starship 和 zsh 配置，删除 .tmux 和 ohmyzsh ，简化整体的配置。
+** zsh
+
+使用 starship 和 zsh 配置，删除 .tmux 和 ohmyzsh ，简化整体的配置。
+
+- 新增 zoxide 命令
+
+   #+begin_src shell
+     # 安装 fzf 依赖
+     sudo port install fzf # macos
+     sudo dnf install fzf # fedora
+
+     # 安装 zoxide 命令
+     cargo install zoxide --locked
+   #+end_src
+
+   启动 zoxide ，向 =.zshrc= 中添加：
+
+   #+begin_src shell
+     # 启动 zoxide
+     eval "$(zoxide init zsh)"
+
+     # 加载 fzf 插件
+     source /opt/local/share/fzf/shell/key-bindings.zsh
+     source /opt/local/share/fzf/shell/completion.zsh
+   #+end_src
+
+
