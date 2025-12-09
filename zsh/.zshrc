@@ -2,19 +2,20 @@ if [[ "$OSTYPE" =~ ^darwin ]]; then
     # Macport
     export PATH=/opt/local/bin:$PATH
     export PATH=/opt/local/lib:$PATH
-    ./macrc.sh
+    "$HOME/.zsh/macosrc.sh"
 fi
 
 if [[ "$OSTYPE" =~ ^linux ]]; then
     eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+    "$HOME/.zsh/linuxrc.sh"
 fi
 
 # Starship 提示符
 eval "$(starship init zsh)"
 
 # 加载插件
-source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
-source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source "$HOME/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh"
+source "$HOME/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
 
 # 启用 Zsh 补全
 zstyle ':completion:*' menu select
@@ -69,8 +70,8 @@ export PATH="$HOME/.cargo/bin:$PATH"
 export PATH="$HOME/.cargo:$PATH"
 export PATH="$HOME/.rustup:$PATH"
 
-export RUSTUP_DIST_SERVER="https://mirrors.ustc.edu.cn/rust-static"
-export RUSTUP_UPDATE_ROOT="https://mirrors.ustc.edu.cn/rust-static/rustup"
+export RUSTUP_DIST_SERVER="https://mirrors.tuna.tsinghua.edu.cn/rustup"
+export RUSTUP_UPDATE_ROOT="https://mirrors.tuna.tsinghua.edu.cn/rustup/rustup"
 
 # uv
 export UV_INDEX_URL="https://mirrors.ustc.edu.cn/pypi/simple"
@@ -85,21 +86,6 @@ export PYTHON_BUILD_MIRROR_URL="https://registry.npmmirror.com/-/binary/python"
 export VOLTA_FEATURE_PNPM=1
 export VOLTA_HOME="$HOME/.volta"
 export PATH="$VOLTA_HOME/bin":"$PATH"
-
-# fvm dart and flutter 管理器
-export PUB_HOSTED_URL="https://mirrors.tuna.tsinghua.edu.cn/dart-pub"
-export FLUTTER_STORAGE_BASE_URL="https://mirrors.tuna.tsinghua.edu.cn/flutter"
-export PATH=$PATH:"$HOME/fvm/default/bin"
-
-# android
-# android sdk
-export ANDROID_HOME="$HOME/Library/Android/sdk"
-
-# android ndk home
-export NDK_HOME="$ANDROID_SDK_ROOT/ndk/29.0.14206865"
-
-export PATH="$ANDROID_HOME/cmdline-tools/latest/bin":"$ANDROID_HOME/platform-tools":"$PATH"
-export PATH="$NDK_HOMDE/bin":"$NDK_HOME/toolchains/llvm/prebuilt/darwin-x86_64/bin":"$PATH"
 
 # gradle home
 export GRADLE_USER_HOME="$HOME/.gradle"
