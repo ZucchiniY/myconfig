@@ -2,12 +2,12 @@ if [[ "$OSTYPE" =~ ^darwin ]]; then
     # Macport
     export PATH=/opt/local/bin:$PATH
     export PATH=/opt/local/lib:$PATH
-    "$HOME/.zsh/macosrc.sh"
+    source "$HOME/.zsh/.macosrc"
 fi
 
 if [[ "$OSTYPE" =~ ^linux ]]; then
     eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
-    "$HOME/.zsh/linuxrc.sh"
+    source "$HOME/.zsh/.linuxrc"
 fi
 
 # Starship 提示符
