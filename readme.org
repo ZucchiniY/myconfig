@@ -42,6 +42,10 @@ Emacs 的配置文件夹做为子项目保存，配置文件更新之后需要�
 
 - 新增 zoxide 命令
 
+   #+begin_src sh
+     cargo install zoxide --locked
+   #+end_src
+
    #+begin_src shell
      # 安装 fzf 依赖
      sudo port install fzf # macos
