@@ -1,4 +1,5 @@
 if [[ "$OSTYPE" =~ ^darwin ]]; then
+    echo "mac"
     # Macport
     export PATH=/opt/local/bin:$PATH
     export PATH=/opt/local/lib:$PATH
@@ -9,6 +10,8 @@ if [[ "$OSTYPE" =~ ^linux ]]; then
     eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
     source "$HOME/.zsh/.linuxrc"
 fi
+# 新增 PATH
+export PATH=$HOME/.local/bin:$PATH
 
 # Starship 提示符
 eval "$(starship init zsh)"
@@ -91,3 +94,9 @@ export PATH="$VOLTA_HOME/bin":"$PATH"
 export GRADLE_USER_HOME="$HOME/.gradle"
 
 eval "$(zoxide init zsh)"
+
+# add ty for python
+# curl -LsSf https://astral.sh/ty/install.sh | sh
+eval "$(ty generate-shell-completion zsh)"
+
+# . "$HOME/.local/bin/env"

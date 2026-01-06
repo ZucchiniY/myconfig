@@ -12,13 +12,29 @@
 
 终端模拟器，从 iTerm 和 Kitty 迁移而来。
 
-** emacs
+- ~zoxide~ :: 快速跳转目录的工具，替代 ~cd~ 命令，使用 ~cargo~ 安装
+
+** .emacs.d
 
 Emacs 的配置文件夹做为子项目保存，配置文件更新之后需要同步更新。
 
+- ~emacs-lsp-booster~ :: 加速工具，加速 eglot ，需要 ~cargo~ 进行安装
+
 ** python
 
-使用 =uv= 工具管理 =Python= 相关的包和开发环境。
+- ~uv~ :: 使用 =uv= 工具管理 =Python= 相关的包和开发环境
+- ~ty~ :: Python 类型检查器，和 =uv= 同属一家，可以 homebrew 直接安装 MacPorts 未纳入。 
+
+  #+begin_src shell
+    curl -LsSf https://astral.sh/ty/install.sh | sh
+  #+end_src
+
+  需要添加配置：
+
+  #+begin_src shell
+    echo 'eval "$(ty generate-shell-completion zsh)"' >> ~/.zshrc
+  #+end_src
+
 
 ** flutter
 
@@ -33,6 +49,7 @@ Emacs 的配置文件夹做为子项目保存，配置文件更新之后需要�
 ** android
 
 安装 android-sdk android-ndk 相关工具，使用 android-studio 最方便。
+
 
 * 配置
 
@@ -67,3 +84,14 @@ Emacs 的配置文件夹做为子项目保存，配置文件更新之后需要�
    #+end_src
 
 
+* Mac 专用
+
+** mole
+
+Mac 清理工具，可以使用 =homebrew= 安装，但是不能使用 MacPorts 。
+
+#+begin_src shell
+  curl -fsSL https://raw.githubusercontent.com/tw93/mole/main/install.sh | bash
+#+end_src
+
+- ~jq~ :: 需要额外安全 =jq= 才能使用 ~mo optimize~ ，可以使用 ~port install jq~ 安装
