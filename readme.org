@@ -10,6 +10,9 @@
 
 - emacs :: ~sudo port install emacs~
 - emacs-app-devel :: ~sudo port install emacs-app-devel~
+- fzf :: ~sudo port install fzf~
+- fastfetch :: ~sudo port install fastfetch~
+- ripgrep :: ~sudo port install ripgrep~
 
 启动的时候，emacs 命令行版，emacs-app 客户端版。
 
@@ -41,7 +44,6 @@ Emacs 的配置文件夹做为子项目保存，配置文件更新之后需要�
   #+begin_src shell
     echo 'eval "$(ty generate-shell-completion zsh)"' >> ~/.zshrc
   #+end_src
-
 
 ** flutter
 
