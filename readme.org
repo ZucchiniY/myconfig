@@ -13,6 +13,8 @@
 - fzf :: ~sudo port install fzf~
 - fastfetch :: ~sudo port install fastfetch~
 - ripgrep :: ~sudo port install ripgrep~
+- bat :: ~sudo port install bat~
+- uv :: ~sudo port install uv~
 
 启动的时候，emacs 命令行版，emacs-app 客户端版。
 
