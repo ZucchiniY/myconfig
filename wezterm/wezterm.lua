@@ -79,5 +79,22 @@ config.visual_bell = {
    fade_out_duration_ms = 150,
 }
 
+-- keybinds
+config.leader = { key = "a", mods = 'CTRL', timeout_milliseconds = 1000 }
+config.keys = {
+   {
+      -- 水平切分
+      key = "|",
+      mods = "LEADER|SHIFT",
+      action = wezterm.action.SplitHorizontal { domain = 'CurrentPaneDomain'},
+   },
+   {
+      -- 垂直切分
+      key = "-",
+      mods = "LEADER",
+      action = wezterm.action.SplitVertical { domain = 'CurrentPaneDomain'},
+   },
+}
+
 -- Finally, return the configuration to wezterm:
 return config
