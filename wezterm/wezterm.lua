@@ -80,7 +80,7 @@ config.visual_bell = {
 }
 
 -- keybinds
-config.leader = { key = "a", mods = 'CTRL', timeout_milliseconds = 1000 }
+config.leader = { key = "a", mods = 'CTRL|CMD', timeout_milliseconds = 1000 }
 config.keys = {
    {
       -- 水平切分
