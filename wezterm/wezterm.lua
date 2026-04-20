@@ -16,8 +16,11 @@ config.font_size = 16
 -- AdventureTime | Batman | Catppuccin | Dracula | GitHub Dark
 config.color_scheme = 'Tokyo Night'
 config.font = wezterm.font_with_fallback({
-      'Iosevka Nerd Font Mono',
-      'LXGW WenKai Mono Medium',
+'IosevkaTerm NFM',
+      'Iosevka NFM',
+      'LXGW WenKai Mono GB Screen',
+      'LXGW WenKai Mono',
+      'LXGW WenKai Medium',
       'JetBrains Mono',
       'Fire Code',
       '华文仿宋',

@@ -1,11 +1,13 @@
 # jdk
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-25-macports.jdk/Contents/Home
+export JAVA_HOME=/usr/lib/jvm/java-25-openjdk
+export PATH=$JAVA_HOME/bin:$PATH
 
+echo "Java setting"
 # android
 # android sdk
 export ANDROID_HOME="$HOME/Android/Sdk"
+echo "Android setting"
 # android ndk home
-export NDK_HOME="$ANDROID_HOME/ndk/29.0.14206865"
+export ANDROID_NDK_HOME="$ANDROID_HOME/ndk/25.2.9519653"
 # path
 export PATH="$PATH:$ANDROID_HOME/emulator:$ANDROID_HOME/platform-tools"
-
