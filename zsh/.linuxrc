@@ -1,5 +1,7 @@
 # jdk
-export JAVA_HOME=/usr/lib/jvm/java-25-openjdk
+# export JAVA_HOME=/usr/lib/jvm/java-25-openjdk
+# export JAVA_HOME=/usr/lib/jvm/java
+export JAVA_HOME=/home/dylan/Downloads/android-studio/jbr
 export PATH=$JAVA_HOME/bin:$PATH
 
 echo "Java setting"
@@ -11,3 +13,7 @@ echo "Android setting"
 export ANDROID_NDK_HOME="$ANDROID_HOME/ndk/25.2.9519653"
 # path
 export PATH="$PATH:$ANDROID_HOME/emulator:$ANDROID_HOME/platform-tools"
+
+# 将 NDK 的工具链加入系统 PATH
+export PATH=$ANDROID_NDK_HOME/toolchains/llvm/prebuilt/linux-x86_64/bin:$PATH
+
