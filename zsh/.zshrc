@@ -7,7 +7,7 @@ if [[ "$OSTYPE" =~ ^darwin ]]; then
 fi
 
 if [[ "$OSTYPE" =~ ^linux ]]; then
-    eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+#    eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
     source "$HOME/.zsh/.linuxrc"
 fi
 # 新增 PATH
@@ -100,3 +100,5 @@ eval "$(zoxide init zsh)"
 eval "$(ty generate-shell-completion zsh)"
 
 # . "$HOME/.local/bin/env"
+# add fcitx
+export CLUTTER_IM_MODULE=fcitx
