@@ -10,7 +10,7 @@ echo "Java setting"
 export ANDROID_HOME="$HOME/Android/Sdk"
 echo "Android setting"
 # android ndk home
-export ANDROID_NDK_HOME="$ANDROID_HOME/ndk/26.3.11579264"
+export ANDROID_NDK_HOME="$ANDROID_HOME/ndk/29.0.14206865"
 # path
 export PATH="$PATH:$ANDROID_HOME/emulator:$ANDROID_HOME/platform-tools"
 
@@ -21,3 +21,11 @@ export GTK_IM_MODULE=fcitx
 export QT_IM_MODULE=fcitx
 export XMODIFIERS=@im=fcitx
 export INPUT_METHOD=fcitx
+export CLUTTER_IM_MODULE=fcitx
+
+# ollama
+PATH="$PATH:/home/dylan/ollama/bin"
+# deno
+PATH="/home/dylan/.deno/bin:$PATH"
+
+export PATH

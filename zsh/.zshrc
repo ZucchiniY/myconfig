@@ -87,7 +87,7 @@ export PYTHON_BUILD_MIRROR_URL="https://registry.npmmirror.com/-/binary/python"
 
 # use fnm
 export FNM_NODE_DIST_MIRROR=https://mirrors.tuna.tsinghua.edu.cn/nodejs-release/
-eval "$(fnm env)"
+eval "$(fnm env --use-on-cd)"
 
 # gradle home
 export GRADLE_USER_HOME="$HOME/.gradle"
@@ -99,7 +99,3 @@ eval "$(zoxide init zsh)"
 eval "$(ty generate-shell-completion zsh)"
 
 # . "$HOME/.local/bin/env"
-# add fcitx
-export CLUTTER_IM_MODULE=fcitx
-PATH=$PATH:/home/dylan/ollama/bin
-export PATH
