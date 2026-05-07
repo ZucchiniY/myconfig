@@ -85,10 +85,9 @@ export UV_INDEX_URL="https://mirrors.ustc.edu.cn/pypi/simple"
 export UV_PYTHON_INSTALL_MIRROR="https://ghfast.top/https://github.com/astral-sh/python-build-standalone/releases/download"
 export PYTHON_BUILD_MIRROR_URL="https://registry.npmmirror.com/-/binary/python"
 
-# volta `sudo port install volta-node`
-export VOLTA_FEATURE_PNPM=1
-export VOLTA_HOME="$HOME/.volta"
-export PATH="$VOLTA_HOME/bin":"$PATH"
+# use fnm
+export FNM_NODE_DIST_MIRROR=https://mirrors.tuna.tsinghua.edu.cn/nodejs-release/
+eval "$(fnm env)"
 
 # gradle home
 export GRADLE_USER_HOME="$HOME/.gradle"
