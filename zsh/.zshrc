@@ -75,7 +75,7 @@ export PATH="$HOME/.rustup:$PATH"
 
 export RUSTUP_DIST_SERVER="https://mirrors.tuna.tsinghua.edu.cn/rustup"
 export RUSTUP_UPDATE_ROOT="https://mirrors.tuna.tsinghua.edu.cn/rustup/rustup"
-
+export NODEJS_ORG_MIRROR="https://npmmirror.com"
 # uv
 export UV_INDEX_URL="https://mirrors.ustc.edu.cn/pypi/simple"
 
@@ -101,3 +101,5 @@ eval "$(ty generate-shell-completion zsh)"
 # . "$HOME/.local/bin/env"
 # add fcitx
 export CLUTTER_IM_MODULE=fcitx
+PATH=$PATH:/home/dylan/ollama/bin
+export PATH
